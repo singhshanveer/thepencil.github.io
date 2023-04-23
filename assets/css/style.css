@@ -1,0 +1,531 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #ffb03b;
+}
+
+a:hover {
+  color: #ffc56e;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  
+  height: 110px;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 20px 0;
+  background: rgba(26, 24, 22, 0.9);
+}
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 80px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: white;
+  padding: 9px 30px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #d57b09;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #5f5950;
+}
+
+.section-title h2 span {
+  color: #ffb03b;
+}
+
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.1)), url("../img/hero-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0;
+}
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero h1 {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 5px;
+  color: #fff;
+  font-family: 'Style Script', cursive;
+  text-align: center;
+}
+
+#hero h1 span {
+  color: #d57b09;
+  text-align: center;
+}
+
+#hero h2 {
+  color: #eee;
+  margin-bottom: 10px 0 0 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  background: #eff7fd ;
+  position: relative;
+  padding: 80px 0;
+}
+
+.about .about-img {
+  position: relative;
+}
+
+.about .about-img img {
+  max-width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px 0px 50px 0px;
+  position: relative;
+}
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+}
+.about .content p{
+	line-height: 30px;
+	text-align: justify;
+  line-height: 35px;
+}
+
+/*--------------------------------------------------------------
+# Product
+--------------------------------------------------------------*/
+.product .col-lg-4{
+  margin-bottom: 40px;
+}
+
+.product .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.product .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffcf88;
+}
+
+.product .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #6c665c;
+}
+
+.product .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.product .box .btn-wrap {
+  padding: 50px 0px 0px 50px;
+
+}
+.product .box .btn-wrap .btn-buy{
+  margin-right: 30px;
+}
+
+.product .box .btn-buy {
+  background: #46423b;
+  padding: 22px 20px 22px 20px;
+  border-radius: 5px;
+  transition: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.product .box .btn-buy:hover {
+  background: #d57b09;
+  color: #fff;
+}
+.product .box .btn-buy .img-fluid:hover {
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# ******About Page CSS******
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Cover
+--------------------------------------------------------------*/
+.cover{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.1)), url("../img/h1.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0;
+}
+.cover .title h2{
+  padding-top: 25%;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+   font-family: 'Style Script', cursive;
+}
+
+.intro .text h3{
+  text-align: center;
+  font-size: 25px;
+  color: #d57b09;
+}
+.intro .text p{
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 0px 50px 0px;
+}
+.intro .intro-img {
+  position: relative;
+}
+.intro .intro-img img {
+  max-width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+  box-shadow: ;
+}
+.intro .content1 h3{
+  color: #d57b09;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro .content1 p{
+  text-align: justify;
+  line-height: 40px;
+
+}
+.intro .content2 p{
+  margin: 20px 0px 120px 0px;
+  text-align: justify;
+  line-height: 40px;
+
+}
+.intro .content3 p{
+  margin: 20px 0px 50px 0px;
+  text-align: justify;
+  line-height: 40px;
+
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+  background: #f6f8fd;
+  padding-bottom: 80px;
+}
+
+.services .icon-box {
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.services .icon-box:hover {
+  transform: scale(1.08);
+}
+
+.services .icon {
+  margin-bottom: 20px;
+}
+
+.services .icon i {
+  font-size: 32px;
+  line-height: 1;
+  color: #2d405f;
+  background: #eff2f8;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.services .icon img{
+  width: 95px;
+  height: 95px;
+}
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.services .title a {
+  color: #fff;
+  transition: 0.3s;
+}
+.services .title a:hover {
+  color: #4e6fa4;
+}
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: justify ;
+}
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+  padding-bottom: 70px;
+
+}
+
+.gallery .section-title{
+  margin-left: 60px;
+}
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+/*--------------------------------------------------------------
+# buy
+--------------------------------------------------------------*/
+.buy{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.1)), url("../img/h2.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0;
+}
+.buy .title h2{
+  padding-top: 20%;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  color: #fdf588;
+   font-family: 'Style Script', cursive;
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.cont{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(2, 2, 2, 0.2), rgba(0, 0, 0, 0.6)), url("../img/h3.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding: 0;
+}
+.cont .title h2{
+  padding-top: 25%;
+  margin-left: 20%;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-family: 'Style Script', cursive;
+}
+
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #FFF;
+
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #ef6603;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fff7e5;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("../img/footer-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffb03b;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+  font-family: 'Style Script', cursive;
+}
+
+#footer p {
+  font-size: 18px;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #46423b;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #ffb03b;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
